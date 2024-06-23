@@ -27,7 +27,7 @@ const Temp = () => {
              }} />
           </div>
           {!city ? (
-            <p>Data not found</p>
+            <p className='error'>Data not found</p>
           ) : (
             <div>
             <div className="info">
@@ -36,10 +36,10 @@ const Temp = () => {
             {search}  
             </h2>
             <h1 className="temp">
-               {city.temp_c}°
+               {city.temp_c}°C
             </h1>
             <h3 className='temp-max'>
-            Min: {city.feelslike_c}° | Max: {city.humidity}°
+            Feels Like: {city.feelslike_c}°C | Humidity: {city.humidity}
             </h3>
         </div>
         <div className="wave -one"></div>
